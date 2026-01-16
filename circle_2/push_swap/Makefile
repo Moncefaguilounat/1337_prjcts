@@ -33,7 +33,7 @@ $(EXEC): $(NAME) $(OBJ)
 	$(CC) $(CFLAGS) ft_push_swap.o $(NAME) -o $(EXEC)
 
 clean:
-	rm -f $(OBJ) $(OBJ_BONUS)
+	rm -f $(OBJ) $(OBJ_BONUS) .bonus
 
 fclean: clean
 	rm -f $(NAME) $(EXEC) checker
