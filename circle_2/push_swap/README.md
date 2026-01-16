@@ -20,21 +20,21 @@ To compile the project, run:
 
 ```bash
 make
-This will generate the executable:
+#This will generate the executable:
 ./push_swap
 
-To compile the bonus checker:
+#To compile the bonus checker:
 make bonus
-This will generate:
+#This will generate:
 ./checker
 
-To clean object files:
+#To clean object files:
 make clean
 
-To remove all compiled files:
+#To remove all compiled files:
 make fclean
 
-To recompile everything:
+#To recompile everything:
 make re
 ```
 ## Usage
