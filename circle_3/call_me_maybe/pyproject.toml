@@ -1,0 +1,26 @@
+[project]
+name = "call-me-maybe"
+version = "1.0.0"
+description = "Simple constrained-decoding function calling with a small model"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "llm-sdk",
+    "numpy>=1.24",
+    "pydantic>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.0",
+    "mypy>=1.8",
+]
+
+[tool.uv.workspace]
+members = ["llm_sdk"]
+
+[tool.uv.sources]
+llm-sdk = { workspace = true }
+
+[tool.mypy]
+exclude = ["^llm_sdk/"]
